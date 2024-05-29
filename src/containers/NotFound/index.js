@@ -4,8 +4,9 @@ class NotFound extends Component {
   render() {
     return (
       <div className="not-found">
-        <h1>404</h1>
+        <h1>__communityT("404")</h1>
         <h3>__communityT("Page not found")</h3>
+        <h2>__communityT("NewLabel")</h2>
       </div>
     )
   }

@@ -12,8 +12,8 @@ const Product = ({product, compare}) =>
             <div className="stats">
                 <div className="stats-container">
                     <span className="product_price">__communityT("Label2")</span>
-                    <span className="product_name">__communityT("Label")</span>
-                    <p>{product.description}</p>
+                    <span className="product_name">__communityT(""newLabel")</span>
+                    <p>__communityT("ProductDecription")</p>
                 </div>
             </div>
         </div>
