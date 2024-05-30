@@ -17,7 +17,7 @@ class Home extends Component {
       <div className="home mt-5">
         <div className="row">
           <div className="col-12">
-            <h2 className="mb-3">Compare Products</h2>
+            <h2 className="mb-3">__communityT("Two labels in one line. This is First-one.") xyz__text __communityT("This is second-label")</h2>
           </div>
         </div>
         <ProductList products={products} compare={actions.compare}/>
