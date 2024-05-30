@@ -18,6 +18,7 @@ class Home extends Component {
         <div className="row">
           <div className="col-12">
             <h2 className="mb-3">__communityT("Two labels in one line. This is First-one.") xyz__text __communityT("This is second-label")</h2>
+            <h2 className="mb-3">__commonT("Two different namespace labels in one line. This is First-one with __commonT.") xyz__text __("This is second-label with __")</h2>
           </div>
         </div>
         <ProductList products={products} compare={actions.compare}/>

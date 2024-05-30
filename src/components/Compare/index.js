@@ -24,6 +24,8 @@ const Compare = ({products}) =>
           </tr>
           <tr className="colors">
             <th scope="row">__communityT("we use __communityT('Label') for localization")</th>
+            <th scope="row">__commonT("we can also use __commonT('Label') for localization also")</th>
+            <th scope="row">__("we can also use __('Label') for localization also")</th>
             {products.map(product =>
               <td key={product.id}>
                 {product.colors.map((color, index) =>
@@ -34,6 +36,7 @@ const Compare = ({products}) =>
           </tr>
           <tr className="condition">
             <th scope="row">__communityT(`we will use ${DESCRIPTION}`)</th>
+            <th scope="row">__(`we will use new namespace __ ${DESCRIPTION}`)</th>
             {products.map(product =>
               <td key={product.id} className={product.condition === "Frozen" ? "bg-red" : "bg-green"}>
                 {product.condition}
