@@ -23,7 +23,7 @@ const Compare = ({products}) =>
             )}
           </tr>
           <tr className="colors">
-            <th scope="row">Colors</th>
+            <th scope="row">__communityT("we use __communityT('Label') for localization")</th>
             {products.map(product =>
               <td key={product.id}>
                 {product.colors.map((color, index) =>
