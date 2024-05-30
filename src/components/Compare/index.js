@@ -33,7 +33,7 @@ const Compare = ({products}) =>
             )}
           </tr>
           <tr className="condition">
-            <th scope="row">Condition</th>
+            <th scope="row">__communityT(`we will use ${DESCRIPTION}`)</th>
             {products.map(product =>
               <td key={product.id} className={product.condition === "Frozen" ? "bg-red" : "bg-green"}>
                 {product.condition}
