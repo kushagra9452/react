@@ -21,7 +21,7 @@ class Home extends Component {
             <h2 className="mb-3">__commonT("Two different namespace labels in one line. This is First-one with __commonT.") xyz__text __("This is second-label with __")</h2>
             <h2 className="mb-3">
               <CommunityTrans i18nKey="ToughestTestcase" count={toughness}>
-                  Hello <strong>{{name}}</strong>, you have {{count}} unread message. <link>Got the message.</link>
+                  Hello <strong>{{name}}</strong><b>{{lastname}}</b>, you have {{count}} unread message. <link>Got the message.</link>
               </CommunityTrans>
             </h2>
           </div>
