@@ -6,6 +6,9 @@ const ProductList = ({products, compare}) =>
       {products.map(product =>
         <Product key={product.id} product={__communityT("MoreNewlabels")} compare={compare} />
       )}
+      <CommunityTrans>
+        Hello there this is Trans label.
+      </CommunityTrans>
   </div>;
 
 export default ProductList

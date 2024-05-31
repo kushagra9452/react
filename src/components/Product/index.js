@@ -16,6 +16,11 @@ const Product = ({product, compare}) =>
                     <span className="product_name">__communityT("newLabel")</span>
                     <p>__communityT("Product.(Decription)")</p>
                     <p>__communityT<h1>__communityT("Label-Tough.This is a tough label")</h1></p>
+                    <p>
+                        <CommunityTrans i18nKey="New Trans key">
+                            Hello {{name}}. This is trans with i18nKey.
+                        </CommunityTrans>
+                    </p>
                 </div>
             </div>
         </div>

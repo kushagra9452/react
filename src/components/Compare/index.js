@@ -17,7 +17,11 @@ const Compare = ({products}) =>
         </thead>
         <tbody>
           <tr className="price">
-            <th scope="row">Price</th>
+            <th scope="row">
+              <CommunityTrans i18nKey="random Label for trans">
+                Hello {{firstname: result.name}}. More complex case.
+              </CommunityTrans>
+            </th>
             {products.map(product =>
               <td key={product.id} className="text-center">{product.price}</td>
             )}
@@ -37,6 +41,11 @@ const Compare = ({products}) =>
           <tr className="condition">
             <th scope="row">__communityT(`we will use ${DESCRIPTION}`)</th>
             <th scope="row">__(`we will use new namespace __ ${DESCRIPTION}`)</th>
+            <th scope="row">
+              <CommunityTrans i18nKey="LabelWithCount" count = {message.length}>
+                    You have {{count : message.length}} messages.
+              </CommunityTrans>
+            </th>
             {products.map(product =>
               <td key={product.id} className={product.condition === "Frozen" ? "bg-red" : "bg-green"}>
                 {product.condition}
